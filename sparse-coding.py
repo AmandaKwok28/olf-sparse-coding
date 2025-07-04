@@ -165,9 +165,9 @@ def plot_bases(bases: np.ndarray, patch_size: int, n_cols: int = 10):
 
 if __name__ == "__main__":
     
-    dataset = generate_dataset(1000)
+    dataset = generate_dataset(100)
     
     # note that a high value of lambda puts an emphasis on the sparsity of the activations
-    model = SparseCodingModel(n_bases=100, patch_size=16, lambda_=1, eta=0.01)
-    model.train(dataset, n_epochs=20)
+    model = SparseCodingModel(n_bases=50, patch_size=16, lambda_=1, eta=0.01)
+    model.train(dataset, n_epochs=10)
     plot_bases(model.bases, model.patch_size)
