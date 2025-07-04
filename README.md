@@ -15,6 +15,11 @@ Olshausen, B. A., & Field, D. J. (1996). Emergence of simple-cell receptive fiel
 - The sparse codes are instructions that represent linear combinations of these basis functions to recreate images
 - The idea is that the basis functions span the entire image space it's given. The sparse codes are instructions that let you know which basis functions you need to combine in order to recreate any given image
 
+### Example output: basis functions obtained from sample data
+Here, the algorithm was run on a similiar dataset to the paper's figure 3b. The basis functions displayed below show that the algorithm has discovered features of images that exhibit some of the features that simple cells in the visual cortex have. As you can see, some of the basis functions are oriented - for instance, the ones that look like diagonals or edges. Depending on the run, it also shows spatially localized bases which look like zoomed in edges. 
+<br></br>
+<img src="bases.png" alt="Sample Image" width="500" height="400"/>
+
 ## 🚀 Getting Started
 
 ### Requirements
